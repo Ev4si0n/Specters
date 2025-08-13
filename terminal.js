@@ -28,7 +28,7 @@ function terminal(server) {
     const shell =
       process.platform === "win32"
         ? "powershell.exe"
-        : process.env.SHELL || "/bin/bash";
+        : process.env.SHELL || "/bin/sh";
 
     console.log(`Starting terminal with shell: ${shell}`);
 
